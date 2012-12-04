@@ -1,3 +1,5 @@
+//Dinuk Kurukulasooriya
+
 #include <string>
 #include <time.h>
 #include <iostream>

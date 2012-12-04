@@ -1,4 +1,5 @@
 //Dinuk Kurukulasooriya
+//lab7 code
 
 #include <string>
 #include <time.h>

@@ -1,0 +1,52 @@
+NAME:Dinuk Kurukulasooriya
+SID:860893883
+email:dkuru001@ucr.edu
+
+
+****************************OPEN SSL PROJECT INFORMATION**************************************************************
+The main focus of the project was to get us familiar with Open SSL and working with secure communication schemes.
+
+In this project we were tasked with implimenting a secure ssl connection between a server and a client. The client sends a challenge to 
+the server and the server is to use that challenge to make a encrypted key. The client then authenticates the key by decrypting it.Once that 
+is done the user can now request a file from the server. So the server checks to see if the file is there and sends it to the client. The client 
+then recieves a file and a termial out put of the requested file.
+
+***********************************************************************************************************************
+
+
+****************************GIT HUB INFORMATION**************************************************************
+In my repository there are files that have the form pahse*_ssl_client/server. These files are just older versions of the final ssl_server and
+ssl_client files. 
+
+The files that you have to use to to test my project are called ssl_client and ssl_server. These are the final project files. 
+
+These 2 files aslo contain comments to tell you what I did yo make each step in the client/server work. 
+
+*************************************************************************************************************
+
+*****************************************HOW TO RUN*********************************************************
+First make sure that there are files called "rsaprivatekey.pem" and "rsapublickey.pem" in the directories that that you are running the client or server in. 
+This is important because the server uses the "rsaprivatekey.pem" to encrypt the key and "rsapublickey.pem"is used by the client to decrypt. 
+
+When you have those files read download the ssl_server.cpp and ssl_client.cpp 
+
+Also download the Makefile to build the ssl files you previously downloaded.
+
+You have to make sure to run the server before the client. 
+
+To run the server type "server portnumber", where portnumber is a number greater than 1024. 
+
+To run the client type "client serveraddress:portnumber request" where serveraddress is the name of the machine the server is running on. For example if there server is running on the machine bravo-8 but 
+bravo-8 where serveraddress is. portnumber is the number for the por you used in the server side. And request is the name of a file you want from the server. 
+
+If the program successfully ran the termial should tell you at the end of all the steps this line: ALL TASK COMLETED SUCCESSFULLY. 
+
+And in the clients directory there should the a file with the name "recieved.txt" This file contains the file you requested as well. 
+I didn't see any naming convetion for the recieved file so I just named it recieved.txt. 
+
+***************************************************************************************************************************
+
+
+*******************************************************ISSUES*************************************************************
+
+There were no apparent issues in the final program that I saw. Everything should run fine(from what I tested).
